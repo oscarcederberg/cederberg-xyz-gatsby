@@ -3,17 +3,17 @@ import Layout from "../components/layout"
 
 const lyrics=[
   'a generation lost in space, with no time left to start again',
-  <br />,
+  '\n',
   'en generation förlorad i rymden, utan tid kvar att börja om',
-  <br />,
+  '\n',
   'une génération perdue dans l\'espace, sans plus de temps pour recommencer',
-  <br />,
+  '\n',
   'una generación perdida en el espacio, sin tiempo para empezar de nuevo',
-  <br />,
+  '\n',
   'eine im weltraum verlorene generation, die keine zeit mehr hat, neu anzufangen',
-  <br />,
+  '\n',
   '一代人迷失在太空中，没有时间重新开始',
-  <br />,
+  '\n',
   '宇宙で失われた世代、再開する時間がない'
 ];
 
