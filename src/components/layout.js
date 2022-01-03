@@ -1,18 +1,12 @@
 import * as React from 'react'
-import { Link } from 'gatsby'
 
-const Layout = ({ pageTitle, children }) => {
+const Layout = ({ pageTitle, subTitle, children }) => {
   return (
     <div>
       <title>{pageTitle}</title>
-      <nav>
-        <ul>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/about">About</Link></li>
-        </ul>
-      </nav>
-      <main>
-        <h1>{pageTitle}</h1>
+      <main className="text-center">
+        <h1 className="text-5xl font-title lowercase -mb-2">{pageTitle}</h1>
+        <h1 className="text-l font-title uppercase font-light -my-1">{subTitle}</h1>
         {children}
       </main>
     </div>
