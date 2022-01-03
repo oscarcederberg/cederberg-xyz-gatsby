@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     fontFamily: {
       'title': ['Arial','Helvetica','sans-serif'],
-      'lyrics': ['"Times New Roman"','Times','sans-serif']
+      'lyrics': ['"Times New Roman"','Times','serif']
     },
     extend: {},
   },
