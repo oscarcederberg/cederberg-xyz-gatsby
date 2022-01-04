@@ -19,7 +19,7 @@ const lyrics=[
 
 const AboutPage = () => {
   return (
-    <Layout pageTitle={"About"} subTitle={"under construction"} lyricsText={lyrics}>
+    <Layout pageTitle={"About"} subTitle={"this site"} lyricsText={lyrics}>
       <p>
         a website by oscar cederberg <br />
         powered by gatsby, tailwindcss, etc. <br />
