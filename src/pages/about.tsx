@@ -26,7 +26,7 @@ const AboutPage = () => {
         available open source on <a className="text-blue-500 hover:text-blue-700 active:text-blue-900" href="https://github.com/oscarcederberg/cederberg-xyz">github</a>
       </p>
     </Layout>
-  )
+  );
 }
 
-export default AboutPage
+export default AboutPage;
