@@ -19,7 +19,7 @@ const lyrics=[
 
 const NotFoundPage = () => {
   return (
-    <Layout pageTitle={"error 404"} subTitle={"not found"} lyricsText={lyrics}>
+    <Layout pageTitle={"Error 404"} subTitle={"not found"} lyricsText={lyrics}>
     </Layout>
   )
 }
