@@ -8,7 +8,7 @@ const lyrics=[
   '\n',
   'entre l\'ennui, l\'ennui et l\'horreur - entre le royaume des vivants et des morts',
   '\n',
-  'entre el aburrimiento, el aburrimiento y el horror - entre en el reino de los vivos y los muertos',
+  'entre el aburrimiento, el aburrimiento y el horror - entre el reino de los vivos y los muertos',
 ];
 
 const IndexPage = () => {
