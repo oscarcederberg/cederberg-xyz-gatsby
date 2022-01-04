@@ -1,5 +1,5 @@
 import * as React from "react"
-import Layout from "../components/layout"
+import Layout from "../components/layout-center"
 
 const lyrics=[
   'a generation lost in space, with no time left to start again',

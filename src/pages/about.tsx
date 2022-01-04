@@ -1,5 +1,5 @@
 import * as React from "react"
-import Layout from "../components/layout"
+import Layout from "../components/layout-article"
 
 const lyrics=[
   'between boredom, boredom and horror - between the kingdom of the living and the dead',
