@@ -31,11 +31,24 @@ const links=[
 const IndexPage = () => {
   return (
     <Layout pageTitle={"Cederberg"} subTitle={"Under construction"} lyricsText={lyrics} links={links}>
-      <p>
-        working on something<br />
-        this'll take a while<br />
-        no idea how long<br />
-      </p>
+      <div className="flex flex-col items-center">
+        <div className="flex flex-row justify-evenly
+        bg-yellow-400 py-2 my-2 rounded-md w-96">
+          <h1 className="text-6xl">
+            !
+          </h1>
+          
+          <p>
+            working on something<br />
+            this'll take a while<br />
+            no idea how long<br />
+          </p>
+          
+          <h1 className="text-6xl">
+            !
+          </h1>
+        </div>
+      </div>
     </Layout>
   )
 }
