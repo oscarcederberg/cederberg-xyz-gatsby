@@ -1,12 +1,24 @@
 import { Link } from "gatsby";
 import * as React from "react"
 
-export default function NavBar() {
+export interface NavBarLink {
+  title: string;
+  link: string;
+}
+
+interface NavBarProps {
+  style: string;
+  links: NavBarLink[];
+}
+
+export default function NavBar(props: NavBarProps) {
     return (
-      <div className="flex flex-row justify-evenly my-3 text-center">
-        <Link className="rounded-full bg-gray-300 w-1/4 hover:bg-gray-400" to="/"> home </Link>
-        <Link className="rounded-full bg-gray-300 w-1/4 hover:bg-gray-400" to="/about"> about </Link>
-        <Link className="rounded-full bg-gray-300 w-1/4 hover:bg-gray-400" to="/404"> 404 </Link>
+      <div className={props.style}>
+        {
+          props.links.map(function(props: NavBarLink, i: number){ 
+            return <Link key={i} className="rounded-full bg-gray-300 w-1/4 hover:bg-gray-400" to={props.link}> {props.title} </Link>
+          })
+        }
       </div>
     )
 }

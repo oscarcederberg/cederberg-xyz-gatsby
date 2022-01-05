@@ -13,9 +13,24 @@ const lyrics=[
   '지루함, 지루함과 공포 사이 - 산 자와 죽은 자들의 왕국 사이'
 ];
 
+const links=[
+  {
+    title: "home",
+    link: "/"
+  },
+  {
+    title: "about",
+    link: "/about"
+  },
+  {
+    title: "404",
+    link: "/404"
+  },
+]
+
 const IndexPage = () => {
   return (
-    <Layout pageTitle={"Cederberg"} subTitle={"under construction"} lyricsText={lyrics}>
+    <Layout pageTitle={"Cederberg"} subTitle={"Under construction"} lyricsText={lyrics} links={links}>
       <p>
         working on something<br />
         this'll take a while<br />
