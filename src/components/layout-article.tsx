@@ -14,16 +14,17 @@ export default function LayoutArticle(props: LayoutProps) {
     <>
       <title>{props.pageTitle} | {props.subTitle}</title>
       <main className="relative text-center h-screen v-screen">
-        <div className='z-10 text-left mx-16'>
-          <div className='flex flex-row items-center gap-x-4'>
-            <h1 className="text-xl sm:text-3xl lg:text-5xl
-            font-title lowercase font-bold"> {props.pageTitle} </h1>
+        <div className='z-10 text-left mx-16 mt-6'>
+          <div className='flex flex-col sm:flex-row items-center'>
+            <div className='flex flex-row items-center gap-x-4'>
+              <h1 className="text-xl sm:text-3xl lg:text-5xl
+              font-title lowercase font-bold"> {props.pageTitle} </h1>
 
-            <h1 className="text-xl sm:text-3xl lg:text-5xl 
-            font-title lowercase font-extralight"> {props.subTitle} </h1>
+              <h1 className="text-xl sm:text-3xl lg:text-5xl 
+              font-title lowercase font-extralight"> {props.subTitle} </h1>
+            </div>
+            <NavBar style="flex flex-row justify-evenly text-center w-80" links={props.links} />
           </div>
-
-          <NavBar style="flex flex-row justify-evenly my-3 text-center" links={props.links} />
 
           <div className="my-10">
             {props.children} 

@@ -16,7 +16,7 @@ export default function NavBar(props: NavBarProps) {
       <div className={props.style}>
         {
           props.links.map(function(props: NavBarLink, i: number){ 
-            return <Link key={i} className="rounded-full bg-gray-300 w-1/4 hover:bg-gray-400" to={props.link}> {props.title} </Link>
+            return <Link key={i} className="rounded-full bg-gray-300 w-20 hover:bg-gray-400" to={props.link}> {props.title} </Link>
           })
         }
       </div>
