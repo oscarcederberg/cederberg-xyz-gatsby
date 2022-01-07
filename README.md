@@ -4,15 +4,21 @@
 
 ## Quick start
 
-1.  **Start developing.**
+1.  **Install.**
+    Navigate into the site's directory and install all needed packages.
+    
+    ```shell
+    npm install
+    ```
 
-    Navigate into the site’s directory and start it up.
+2.  **Start developing.**
+    Run the development server.
 
     ```shell
     npm run develop
     ```
 
-2.  **Open the code and start customizing.**
+3.  **Open the code and start customizing.**
 
     Your site is now running at http://localhost:8000!
 
