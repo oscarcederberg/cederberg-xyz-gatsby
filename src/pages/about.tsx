@@ -34,7 +34,7 @@ const AboutPage = () => {
       <p>
         a website by oscar cederberg <br />
         powered by gatsby, tailwindcss, etc. <br />
-        available open source on <a className="text-blue-500 hover:text-blue-700 active:text-blue-900" href="https://github.com/oscarcederberg/cederberg-xyz">github</a>
+        available open source on <a className="text-blue-500 hover:text-blue-700 active:text-blue-900" target="_blank" rel="noopener noreferrer" href="https://github.com/oscarcederberg/cederberg-xyz">github</a>
       </p>
     </Layout>
   );
