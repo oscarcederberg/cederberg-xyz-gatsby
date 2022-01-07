@@ -2,9 +2,7 @@
   cederberg.xyz
 </h1>
 
-this is the repository for my personal website, which is a remake of a pure html5+css site which is currently running on http://cederberg.xyz  
-the goal is a site with responsive design, which is viewable not only on modern computer monitors but also phones and tables  
-i also intend to remake my previous personal wordpress blog with this  
+this is the repository for my personal website, which is a remake of a pure html5+css site which is currently running on http://cederberg.xyz. the goal is a site with responsive design, which is viewable not only on modern computer monitors but also phones and tablets. i also intend to remake my previous personal wordpress blog with this.
 
 ## Packages
 
