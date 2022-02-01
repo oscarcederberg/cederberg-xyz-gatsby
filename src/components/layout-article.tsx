@@ -1,39 +1,38 @@
 import * as React from 'react'
-import NavBar, { NavBarLink } from './navbar'
+import { LyricsBottom } from './lyrics'
+import NavBar from './navbar'
 
 interface LayoutProps {
   pageTitle: string;
   subTitle: string;
   lyricsText: string[];
-  links: NavBarLink[];
   children: any;
 }
 
-export default function LayoutArticle(props: LayoutProps) {
+export default function LayoutArticle({pageTitle, subTitle, lyricsText, children}: LayoutProps) {
   return (
     <>
-      <title>{props.pageTitle} | {props.subTitle}</title>
+      <title>{pageTitle} | {subTitle}</title>
+      
       <main className="relative text-center h-screen v-screen">
         <div className='z-10 text-left mx-16 mt-6'>
           <div className='flex flex-col sm:flex-row items-center'>
             <div className='flex flex-row items-center gap-x-4'>
               <h1 className="text-xl sm:text-3xl lg:text-5xl
-              font-title lowercase font-bold"> {props.pageTitle} </h1>
+              font-title lowercase font-bold"> {pageTitle} </h1>
 
               <h1 className="text-xl sm:text-3xl lg:text-5xl 
-              font-title lowercase font-extralight"> {props.subTitle} </h1>
+              font-title lowercase font-extralight"> {subTitle} </h1>
             </div>
-            <NavBar style="flex flex-row justify-evenly text-center w-80" links={props.links} />
+            <NavBar style="flex flex-row justify-evenly text-center w-80" />
           </div>
 
           <div className="my-10">
-            {props.children} 
+            {children} 
           </div> 
         </div>
 
-        <p className="-z-10 absolute inset-x-0 bottom-0
-        text-xs sm:text-sm lg:text-lg
-        text-gray-300 font-lyrics leading-tight whitespace-pre-line my-2"> {[...props.lyricsText].reverse()} </p>
+        <LyricsBottom text={lyricsText} reversed={true}/>
       </main>
     </>
   )

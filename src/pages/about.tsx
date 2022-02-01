@@ -13,24 +13,9 @@ const lyrics=[
   '지루함, 지루함과 공포 사이 - 산 자와 죽은 자들의 왕국 사이'
 ];
 
-const links=[
-  {
-    title: "home",
-    link: "/"
-  },
-  {
-    title: "about",
-    link: "/about"
-  },
-  {
-    title: "404",
-    link: "/404"
-  },
-]
-
-const AboutPage = () => {
+export default function AboutPage() {
   return (
-    <Layout pageTitle={"About"} subTitle={"This site"} lyricsText={lyrics} links={links}>
+    <Layout pageTitle={"About"} subTitle={"This site"} lyricsText={lyrics}>
       <p>
         a website by oscar cederberg <br />
         powered by gatsby, tailwindcss, etc. <br />
@@ -39,5 +24,3 @@ const AboutPage = () => {
     </Layout>
   );
 }
-
-export default AboutPage;

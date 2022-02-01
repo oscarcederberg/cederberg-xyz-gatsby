@@ -13,26 +13,9 @@ const lyrics=[
   '다시 일어설 여유 없이 우주 속에서 길 잃은 세대'
 ];
 
-const links=[
-  {
-    title: "home",
-    link: "/"
-  },
-  {
-    title: "about",
-    link: "/about"
-  },
-  {
-    title: "404",
-    link: "/404"
-  },
-]
-
-const NotFoundPage = () => {
+export default function NotFoundPage() {
   return (
-    <Layout pageTitle={"Error 404"} subTitle={"Not Found"} lyricsText={lyrics} links={links}>
+    <Layout pageTitle={"Error 404"} subTitle={"Not Found"} lyricsText={lyrics}>
     </Layout>
   )
 }
-
-export default NotFoundPage

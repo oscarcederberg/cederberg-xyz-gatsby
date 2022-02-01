@@ -1,22 +1,31 @@
 import { Link } from "gatsby";
 import * as React from "react"
 
-export interface NavBarLink {
-  title: string;
-  link: string;
-}
+const links=[
+  {
+    title: "home",
+    link: "/"
+  },
+  {
+    title: "about",
+    link: "/about"
+  },
+  {
+    title: "404",
+    link: "/404"
+  },
+]
 
 interface NavBarProps {
   style: string;
-  links: NavBarLink[];
 }
 
-export default function NavBar(props: NavBarProps) {
+export default function NavBar({style}: NavBarProps) {
     return (
-      <div className={props.style}>
+      <div className={style}>
         {
-          props.links.map(function(props: NavBarLink, i: number){ 
-            return <Link key={i} className="rounded-full bg-gray-300 w-20 hover:bg-gray-400" to={props.link}> {props.title} </Link>
+          links.map(function({title, link}, i: number){ 
+            return <Link key={i} className="rounded-full bg-gray-300 w-20 hover:bg-gray-400" to={link}> {title} </Link>
           })
         }
       </div>
