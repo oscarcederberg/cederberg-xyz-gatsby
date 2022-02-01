@@ -10,10 +10,6 @@ const links=[
     title: "about",
     link: "/about"
   },
-  {
-    title: "404",
-    link: "/404"
-  },
 ]
 
 interface NavBarProps {
@@ -25,7 +21,7 @@ export default function NavBar({style}: NavBarProps) {
       <div className={style}>
         {
           links.map(function({title, link}, i: number){ 
-            return <Link key={i} className="rounded-full bg-gray-300 w-20 hover:bg-gray-400" to={link}> {title} </Link>
+            return <Link key={i} className="rounded-full bg-gray-300 w-20 hover:bg-gray-500 active:bg-gray-700 focus:bg-gray-400 active:text-white" to={link}> {title} </Link>
           })
         }
       </div>
