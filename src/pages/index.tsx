@@ -17,19 +17,18 @@ export default function IndexPage() {
   return (
     <Layout pageTitle={"Cederberg"} subTitle={"Under construction"} lyricsText={lyrics}>
       <div className="flex flex-col items-center">
-        <div className="flex flex-row justify-evenly
-        bg-yellow-400 py-2 my-2 rounded-md w-96">
-          <h1 className="text-6xl">
+        <div className="flex flex-row py-2 my-2 bg-yellow-400 rounded-md justify-evenly w-96">
+          <h1 className="text-6xl text-black">
             !
           </h1>
           
-          <p>
+          <p className="text-black">
             working on something<br />
             this'll take a while<br />
             no idea how long<br />
           </p>
           
-          <h1 className="text-6xl">
+          <h1 className="text-6xl text-black">
             !
           </h1>
         </div>

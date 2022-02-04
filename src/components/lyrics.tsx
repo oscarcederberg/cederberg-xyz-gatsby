@@ -12,9 +12,7 @@ export function LyricsTop({text, reversed = false}: LyricsProps) {
     }
 
     return (
-        <p className="-z-10 absolute inset-x-0 top-0
-        text-xs sm:text-sm lg:text-lg
-        text-gray-300 font-lyrics leading-tight whitespace-pre-line my-2"> {text} </p>
+        <p className="absolute inset-x-0 top-0 my-2 text-xs leading-tight text-gray-300 whitespace-pre-line sm:text-sm lg:text-lg dark:text-gray-600 font-lyrics"> {text} </p>
     )
 }
 
@@ -24,8 +22,6 @@ export function LyricsBottom({text, reversed = false}: LyricsProps) {
     }
 
     return (
-        <p className="-z-10 absolute inset-x-0 bottom-0
-        text-xs sm:text-sm lg:text-lg
-        text-gray-300 font-lyrics leading-tight whitespace-pre-line my-2"> {text} </p>
+        <p className="absolute inset-x-0 bottom-0 my-2 text-xs leading-tight text-gray-300 whitespace-pre-line sm:text-sm lg:text-lg dark:text-gray-600 font-lyrics"> {text} </p>
     )
 }

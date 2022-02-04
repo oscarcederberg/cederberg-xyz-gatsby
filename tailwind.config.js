@@ -19,8 +19,8 @@ module.exports = {
         },
       },
       animation: {
-        scroll_lp: 'scroll_lp 24s linear infinite',
-        scroll_rp: 'scroll_rp 24s linear infinite',
+        scroll_lp: 'scroll_lp 48s linear infinite',
+        scroll_rp: 'scroll_rp 48s linear infinite',
       },
     },
   },

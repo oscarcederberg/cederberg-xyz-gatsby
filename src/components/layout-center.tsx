@@ -14,17 +14,14 @@ export default function LayoutCenter({pageTitle, subTitle, lyricsText, children}
     <>
       <title>{pageTitle} | {subTitle}</title>
       
-      <main className="relative text-center h-screen">
+      <main className="relative h-screen text-center dark:bg-gray-900 dark:text-gray-50">
         <LyricsTop text={lyricsText}/>
 
-        <div className='z-10 absolute inset-24 
-        flex flex-col justify-evenly items-center'>
+        <div className='absolute z-10 flex flex-col items-center inset-24 justify-evenly'>
           <div className='w-80 sm:w-96 lg:w-2/3'>
-            <h1 className="text-4xl sm:text-6xl lg:text-8xl
-            font-title lowercase font-bold"> {pageTitle} </h1>
+            <h1 className="text-4xl font-bold lowercase sm:text-6xl lg:text-8xl font-title"> {pageTitle} </h1>
 
-            <h1 className="text-xl sm:text-3xl lg:text-5xl 
-            font-title uppercase font-extralight -mt-2"> {subTitle} </h1>
+            <h1 className="-mt-2 text-xl uppercase sm:text-3xl lg:text-5xl font-title font-extralight"> {subTitle} </h1>
 
             <div> 
               <NavBar style="flex flex-row justify-evenly my-3 text-center" />
