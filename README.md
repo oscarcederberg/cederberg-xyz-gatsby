@@ -5,7 +5,8 @@
 this is the repository for my personal website, which is a remake of a pure html5+css site which is currently running on http://cederberg.xyz. the goal is a site with responsive design, which is viewable not only on modern computer monitors but also phones and tablets. i also intend to remake my previous personal wordpress blog with this.
 
 the site is viewable live during development through Gatsby Cloud at:  
-https://cederbergxyzmain.gtsb.io/
+main: https://cederbergxyzmain.gtsb.io/  
+dev:  https://cederbergxyzdev.gatsbyjs.io/
 
 ## Packages
 
